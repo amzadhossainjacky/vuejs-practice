@@ -1,47 +1,39 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import BaseLayout from "./components/BaseLayout.vue"
+import { ref } from "vue";
+
+let name = ref("Jacky");
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <!-- <HelloWorld name="Jacky"/> -->
+  <!-- <HelloWorld><h1>{{ name }}</h1></HelloWorld>
+  <HelloWorld><h2>{{ name }}</h2></HelloWorld> -->
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+  <BaseLayout>
+    <template v-slot:header>
+      <h1>This Header </h1>
+    </template>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <template v-slot:default>
+      <p>This is main</p>
+    </template>
+
+    <template v-slot:footer>
+      <p>This is footer</p>
+    </template>
+
+    <!-- <template #header>
+      <h1>This Header </h1>
+    </template>
+
+    <template #default>
+      <p>This is main</p>
+    </template>
+
+    <template #footer>
+      <p>This is footer</p>
+    </template> -->
+  </BaseLayout>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
