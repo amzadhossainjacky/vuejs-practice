@@ -5,4 +5,5 @@ ch1:
         i)Using Vue from CDN
         ii)Using Vue by vite + vue
             Command: 
-                a) 
+                a) npm create vue@latest
+                b)
