@@ -7,3 +7,8 @@ ch1:
             Command: 
                 a) npm create vue@latest
                 b)
+
+ch1:  
+    1) basic folder structure
+        Command: 
+            a) npm create vue@latest
