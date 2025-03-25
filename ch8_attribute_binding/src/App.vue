@@ -1,5 +1,5 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'; ''
+import HelloWorld from './components/HelloWorld.vue'; 
 const myid = "myid1"
 const myid2 = "myid2"
 const url = "https://www.google.com/"
