@@ -17,3 +17,14 @@ ch5:
     1) basic folder structure
         Command: 
             a) npm create vue@latest
+ch27: Props  
+    1) basic folder structure
+        Speech: 
+            a) Data passing from child parent to child
+ch28:  
+    1) basic folder structure
+        Speech: 
+            a) Event call from child to parent
+
+
+           
